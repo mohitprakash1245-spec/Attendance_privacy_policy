@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Attendance & Salary</title>
+  <style>
+    :root {
+      --primary-color: #0E7346;
+      --primary-dark: #07472B;
+      --bg-color: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      --accent: #E8F5E9;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: white;
+      padding: 36px 28px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    .content {
+      padding: 32px 28px;
+    }
+    h2 {
+      color: var(--primary-dark);
+      font-size: 19px;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2:first-of-type {
+      margin-top: 0;
+    }
+    p, ul {
+      margin-bottom: 14px;
+      color: #334155;
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .info-card {
+      background-color: var(--accent);
+      border-left: 4px solid var(--primary-color);
+      padding: 16px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .info-card strong {
+      color: var(--primary-dark);
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--primary-dark);
+    }
+    footer {
+      background-color: #F1F5F9;
+      border-top: 1px solid var(--border-color);
+      padding: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .lang-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .tab-btn {
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: 1px solid var(--primary-color);
+      background: white;
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: var(--primary-color);
+      color: white;
+    }
+    @media (max-width: 600px) {
+      .content {
+        padding: 24px 18px;
+      }
+      header {
+        padding: 28px 18px;
+      }
+      header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Privacy Policy / गोपनीयता नीति</h1>
+      <p>Attendance & Salary (Package: com.conicapps.attendance)</p>
+      <div class="badge">Effective Date: November 10, 2026</div>
+    </header>
+
+    <div class="content">
+      <div class="lang-tabs">
+        <button class="tab-btn active" onclick="switchLang('en')">English</button>
+        <button class="tab-btn" onclick="switchLang('hi')">हिंदी (Hindi)</button>
+      </div>
+
+      <!-- ENGLISH SECTION -->
+      <div id="section-en">
+        <div class="info-card">
+          <strong>Summary:</strong> "Attendance & Salary" is designed with user privacy as our top priority. All your attendance entries, duty shifts, overtime hours, and salary calculations are stored <strong>strictly locally on your device</strong>. We do not transmit or store your personal work records on any external server.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy explains how <strong>Attendance & Salary</strong> ("we", "our", or "the app"), with package name <code>com.conicapps.attendance</code>, handles your information when you use our Android mobile application.</p>
+
+        <h2>2. Information We Store Locally on Your Device</h2>
+        <p>The app allows you to record duty, attendance, and salary parameters to compute your monthly wages and overtime. The following data is processed and stored <strong>locally in your phone's private internal storage (Room Database)</strong>:</p>
+        <ul>
+          <li><strong>Employee Profile:</strong> Name, Employee ID, and Department/Designation (entered by you optionally).</li>
+          <li><strong>Attendance & Duty Logs:</strong> Date-wise attendance status (Present, Half Day, Absent, Leave/Holiday, Sunday Duty).</li>
+          <li><strong>Shift Timings:</strong> Clock-in and clock-out hours, break deductions (lunch and tea breaks).</li>
+          <li><strong>Salary & Overtime Settings:</strong> Base salary rate, 26-day overtime divisor preference, and overtime multipliers (1x or 2x).</li>
+        </ul>
+        <p><strong>Important:</strong> None of this financial or personal duty information is sent to our servers or any third-party cloud database.</p>
+
+        <h2>3. Third-Party Services & Advertisements</h2>
+        <p>To keep the application free to use, we display non-intrusive banner advertisements provided by <strong>Google AdMob</strong> (Google Mobile Ads SDK).</p>
+        <p>Google AdMob may collect and process certain technical diagnostic and telemetry information strictly in accordance with Google's Privacy Policy. This may include:</p>
+        <ul>
+          <li>Anonymous device identifiers (such as Google Advertising ID, subject to your Android device settings).</li>
+          <li>IP address and approximate coarse location (for regional ad relevance).</li>
+          <li>Ad interaction data and technical crash/diagnostic metrics.</li>
+        </ul>
+        <p>For more details on how Google uses data from apps that integrate its SDKs, please visit: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Technologies</a>.</p>
+
+        <h2>4. Permissions Used by the App</h2>
+        <ul>
+          <li><code>android.permission.INTERNET</code>: Required strictly to load AdMob banner advertisements and verify network connectivity for ads.</li>
+          <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Used by Google Mobile Ads SDK to check whether an active internet connection is available before requesting an ad.</li>
+        </ul>
+        <p>The app does <strong>NOT</strong> request or access sensitive device permissions such as Camera, Contacts, Microphone, SMS, or precise GPS location.</p>
+
+        <h2>5. Data Retention & Deletion</h2>
+        <p>Because your attendance and salary logs are stored locally on your device:</p>
+        <ul>
+          <li>You can delete or modify any specific date's duty log at any time using the Delete button in the duty sheet.</li>
+          <li>You can reset all settings to default values using the "Reset to Defaults" option in the Settings screen.</li>
+          <li>Uninstalling the app or clearing the app storage from your Android device settings will permanently erase all stored attendance and salary records.</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Our application is not targeted at children under the age of 13. We do not knowingly collect any personal identifiable information from children.</p>
+
+        <h2>7. Changes to this Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected with a revised "Effective Date" at the top of this policy and will be available inside the app settings.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data, please contact the developer at:</p>
+        <p><strong>Email:</strong> <a href="mailto:mohitprakash01@gmail.com">mohitprakash01@gmail.com</a><br>
+        <strong>App Name:</strong> Attendance & Salary<br>
+        <strong>Package:</strong> com.conicapps.attendance</p>
+      </div>
+
+      <!-- HINDI SECTION -->
+      <div id="section-hi" style="display: none;">
+        <div class="info-card">
+          <strong>सारांश:</strong> "Attendance & Salary" (उपस्थिति और वेतन) आपकी गोपनीयता का पूरा सम्मान करता है। आपकी ड्यूटी, हाजिरी, ओवरटाइम और वेतन की सारी जानकारी <strong>पूरी तरह से आपके मोबाइल में सुरक्षित रूप से सेव रहती है</strong>। हम आपका कोई भी निजी डेटा किसी बाहरी सर्वर पर नहीं भेजते हैं।
+        </div>
+
+        <h2>1. परिचय</h2>
+        <p>यह गोपनीयता नीति (Privacy Policy) बताती है कि <strong>Attendance & Salary</strong> ऐप (Package: <code>com.conicapps.attendance</code>) आपके डेटा को किस प्रकार सुरक्षित रखता है जब आप हमारे एंड्रॉइड एप्लिकेशन का उपयोग करते हैं।</p>
+
+        <h2>2. आपके डिवाइस पर सेव की जाने वाली जानकारी</h2>
+        <p>यह ऐप आपको अपनी ड्यूटी, ओवरटाइम और वेतन की गणना करने में मदद करता है। निम्नलिखित जानकारी <strong>केवल आपके फोन के लोकल स्टोरेज (Room Database)</strong> में रखी जाती है:</p>
+        <ul>
+          <li><strong>कर्मचारी प्रोफाइल:</strong> नाम, कर्मचारी आईडी (EMP ID), और पद/विभाग (जो आप दर्ज करते हैं)।</li>
+          <li><strong>उपस्थिति व ड्यूटी रिकॉर्ड:</strong> तारीख-वार हाजिरी की स्थिति (Present, Half Day, Absent, Leave/Holiday, Sunday Duty)।</li>
+          <li><strong>समय व शिफ्ट:</strong> इन-टाइम (Clock In), आउट-टाइम (Clock Out), और लंच व चाय ब्रेक की कटौती।</li>
+          <li><strong>वेतन व ओवरटाइम सेटिंग्स:</strong> बेसिक सैलरी, 26-दिन का ओवरटाइम नियम, और 1x या 2x ओवरटाइम दर।</li>
+        </ul>
+        <p><strong>महत्वपूर्ण:</strong> यह डेटा कभी भी किसी बाहरी सर्वर या थर्ड-पार्टी पर अपलोड नहीं होता है।</p>
+
+        <h2>3. विज्ञापन और थर्ड-पार्टी सेवाएं</h2>
+        <p>ऐप को निःशुल्क उपलब्ध कराने के लिए हम <strong>Google AdMob</strong> द्वारा प्रदान किए गए सुरक्षित बैनर विज्ञापनों का उपयोग करते हैं।</p>
+        <p>Google AdMob विज्ञापन दिखाने और फ्रॉड से सुरक्षा के लिए कुछ तकनीकी जानकारी एकत्र कर सकता है, जैसे कि:</p>
+        <ul>
+          <li>अनाम डिवाइस आईडी (Google Advertising ID, आपके फोन की सेटिंग्स के अनुसार)।</li>
+          <li>नेटवर्क कनेक्टिविटी और सामान्य क्षेत्र (क्षेत्रीय विज्ञापनों के लिए)।</li>
+        </ul>
+        <p>अधिक जानकारी के लिए आप Google की प्राइवेसी पॉलिसी देख सकते हैं: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></p>
+
+        <h2>4. ऐप में उपयोग की जाने वाली अनुमतियाँ (Permissions)</h2>
+        <ul>
+          <li><code>INTERNET</code>: केवल विज्ञापन लोड करने के लिए।</li>
+          <li><code>ACCESS_NETWORK_STATE</code>: इंटरनेट चालू या बंद है यह जांचने के लिए।</li>
+        </ul>
+        <p>यह ऐप आपके फोन के कैमरा, कॉन्टैक्ट्स, लोकेशन, या माइक्रोफोन जैसी किसी भी संवेदनशील अनुमति का उपयोग <strong>नहीं</strong> करता है।</p>
+
+        <h2>5. डेटा हटाना (Data Deletion)</h2>
+        <ul>
+          <li>आप किसी भी दिन का रिकॉर्ड ऐप के अंदर डिलीट बटन से कभी भी हटा सकते हैं।</li>
+          <li>ऐप अनइंस्टॉल करने पर या फोन सेटिंग्स से क्लियर डेटा करने पर आपका सारा रिकॉर्ड तुरंत हमेशा के लिए मिट जाता है।</li>
+        </ul>
+
+        <h2>6. संपर्क करें</h2>
+        <p>यदि इस गोपनीयता नीति के संबंध में आपका कोई प्रश्न या सुझाव है, तो आप हमें सीधे ईमेल कर सकते हैं:</p>
+        <p><strong>ईमेल:</strong> <a href="mailto:mohitprakash01@gmail.com">mohitprakash01@gmail.com</a><br>
+        <strong>ऐप का नाम:</strong> Attendance & Salary<br>
+        <strong>पैकेज:</strong> com.conicapps.attendance</p>
+      </div>
+
+    </div>
+
+    <footer>
+      &copy; 2026 Attendance & Salary (com.conicapps.attendance). All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      const enSec = document.getElementById('section-en');
+      const hiSec = document.getElementById('section-hi');
+      const btns = document.querySelectorAll('.tab-btn');
+
+      if (lang === 'hi') {
+        enSec.style.display = 'none';
+        hiSec.style.display = 'block';
+        btns[0].classList.remove('active');
+        btns[1].classList.add('active');
+      } else {
+        enSec.style.display = 'block';
+        hiSec.style.display = 'none';
+        btns[0].classList.add('active');
+        btns[1].classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>
